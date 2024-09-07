@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="header">
+    <div align="center">
+        <h1>Welcome to by CST-339 Spring Boot Activity Application :)</h1>
+    </div>
+    <div class="bs-example">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">GCU</a>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://www.gcu.edu" target="_blank">Name</a></li>
+                    <li><a href="https://www.lopeshops.gcu.edu" target="_blank">Shop</a></li>
+                    <li><a href="https://www.gcu.edu" target="_blank">News and Events</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/login/">Start Page</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <h2 th:text="${title}">Default Message Text</h2><br/>
+    <img th:src="@{/images/download.jpg}" alt="Lopes"/><br/><br/>
+</div>
+<div th:fragment="footer">
+    <h5 style="color:purple; text-align:center; position: fixed; bottom: 0; width:100%;">Copyright 2020 Grand Canyon Univeristy</h5>
+</div>
+
+</body>
+</html>
