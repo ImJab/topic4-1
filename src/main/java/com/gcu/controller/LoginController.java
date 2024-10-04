@@ -32,13 +32,13 @@ public class LoginController {
         this.service = service;
     }
 
-    @GetMapping("/")
-    public String display(Model model){
-        model.addAttribute("pageTitle", "Login Form");
-        model.addAttribute("loginModel", new LoginModel());
-
-        return "login";
-    }
+//    @GetMapping("/")
+//    public String display(Model model){
+//        model.addAttribute("pageTitle", "Login Form");
+//        model.addAttribute("loginModel", new LoginModel());
+//
+//        return "login";
+//    }
     @PostMapping("/doLogin")
     public String doLogin(@Valid LoginModel loginModel, BindingResult bindingResult, Model model){
         service.test();
