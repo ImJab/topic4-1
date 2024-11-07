@@ -2,6 +2,7 @@ package com.gcu.business;
 
 import com.gcu.business.OrdersBusinessInterface;
 import com.gcu.model.OrderModel;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Primary
 public class OrdersBusinessService implements OrdersBusinessInterface {
 
     @Autowired

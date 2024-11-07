@@ -1,11 +1,16 @@
 package com.gcu.business;
 
+import com.gcu.api.OrdersRestService;
 import com.gcu.model.OrderModel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AnotherBusinessService implements OrdersBusinessInterface {
+    private static final Logger logger = LoggerFactory.getLogger(OrdersRestService.class);
     @Override
     public void test() {
         System.out.println("Hello from the AnotherOrdersBusinessService");
