@@ -32,11 +32,11 @@
 <!--&lt;!&ndash;        </rollingPolicy>&ndash;&gt;-->
 <!--    </appender>-->
 
-    <!-- Log everything at INFO level -->
-<!--    <root level="info">-->
+     Log everything at INFO level
+    <root level="info">
 <!--        <appender-ref ref="RollingFile" />-->
-<!--        <appender-ref ref="Console" />-->
-<!--    </root>-->
+        <appender-ref ref="Console" />
+    </root>
 
     <!-- Log com.gcu at TRACE level -->
     <logger name="com.gcu" level="trace" additivity="false">
